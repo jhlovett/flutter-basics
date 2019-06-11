@@ -10,7 +10,6 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
           appBar: AppBar(title: Text('垂直方向布局')),
           //Column的宽度默认以最长的组件宽度为准
-          //crossAxisAlignment:
           body: Center(
               child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
