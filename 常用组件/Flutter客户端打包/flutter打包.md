@@ -1,19 +1,19 @@
 配置APP的图标  
 想配置APP的图片，你需要找到下面的目录：  
 
-项目根目录/android/app/src/main/res/
+项目根目录/android/app/src/main/res/  
 
-进入之后你会看到很多mipmap-为前缀命名的文件夹，后边的是像素密度，可以看出图标的分辨率。
+进入之后你会看到很多mipmap-为前缀命名的文件夹，后边的是像素密度，可以看出图标的分辨率。  
 
-mdpi (中) ~160dpi
-hdpi （高） ~240dip
-xhdpi （超高） ~320dip
-xxhdpi （超超高） ~480dip
-xxxhdpi （超超超高） ~640dip
-将对应像素密度的图片放入对应的文件夹中,图片记得用png格式，记得名字要统一，才能一次性进行配置。
+mdpi (中) ~160dpi  
+hdpi （高） ~240dip  
+xhdpi （超高） ~320dip  
+xxhdpi （超超高） ~480dip  
+xxxhdpi （超超超高） ~640dip  
+将对应像素密度的图片放入对应的文件夹中,图片记得用png格式，记得名字要统一，才能一次性进行配置。  
 
-AndroidManifest.xml 文件
-这个文件主要用来配置APP的名称、图标和系统权限，所在的目录在:
+AndroidManifest.xml 文件  
+这个文件主要用来配置APP的名称、图标和系统权限，所在的目录在:  
 
 项目根目录/android/app/src/main/AndroidManifest.xml
 android:label="flutter_app"   //配置APP的名称，支持中文
@@ -46,13 +46,13 @@ keyPassword=123123
 keyAlias=key
 storeFile=D:/key.jks
 
-这个工作中也不要分享出去哦，这个Key就算生成成功了。
+这个工作中也不要分享出去哦，这个Key就算生成成功了。  
 
-配置key注册
-key生成好后，需要在build.gradle文件中进行配置。这个过程其实很简单，就是粘贴复制一些东西，你是不需要知道这些文件的具体用处的。
+配置key注册  
+key生成好后，需要在build.gradle文件中进行配置。这个过程其实很简单，就是粘贴复制一些东西，你是不需要知道这些文件的具体用处的。  
 
-第一项：
-进入项目目录的/android/app/build.gradle文件，在android{这一行前面,加入如下代码：
+第一项：  
+进入项目目录的/android/app/build.gradle文件，在android{这一行前面,加入如下代码：  
 def keystorePropertiesFile = rootProject.file("key.properties")
 def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
