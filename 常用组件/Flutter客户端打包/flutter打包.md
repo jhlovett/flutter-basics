@@ -1,5 +1,5 @@
-配置APP的图标
-想配置APP的图片，你需要找到下面的目录：
+配置APP的图标  
+想配置APP的图片，你需要找到下面的目录：  
 
 项目根目录/android/app/src/main/res/
 
